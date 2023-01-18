@@ -1,0 +1,662 @@
+*, ::after, ::before, body, h1, h2, h3, h4, h5, h6, a, ul, li, button, div{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+ul,
+ol {
+  list-style: none;
+}
+.container{
+    width: 100%;
+}
+
+        /*//////*/
+       /*header*/
+      /*//////*/
+
+.header{
+    background-image: url(../img/bg-big.png);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.navbar {
+    background: none;
+    color: #fff;
+    padding-top: 30px;
+    width: 80%;
+    display: flex;
+    margin-left: 87px; 
+}
+.navbar ul.links {
+    list-style: none;
+    display: flex;
+    transition: 0.4s ease all, 0s ease background;
+}
+.navbar ul.links li {
+    text-transform: uppercase;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-around; 
+    transition: 0.4s ease all, 0s ease margin;
+}
+.navbar ul.links li a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.4em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.navbar ul.links li:hover {
+    cursor: pointer;
+}
+.navbar ul.links li:hover a {
+    color: rgba(255, 255, 255, 0.8);
+}
+.content {
+    background-size: cover;
+    height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+.navbar.sticky {
+    position: absolute;
+    z-index: 40;
+}
+.navbar.sticky ~ main {
+    position: absolute;
+    z-index: 20;
+    top: 65px;
+}
+.language{
+    width: 20px;
+    height: 20px;
+    
+}
+.li-language{
+    margin-left: 73%;
+}
+.wrapper-header-line{
+    display: flex;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+} 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -150px;
+    background: #141414;
+    min-width: 160px;
+    z-index: 10;
+}
+.dropdown-content a {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.17em;
+    display: block;
+}
+.dropdown-content a:hover {
+    color: rgba(255, 255, 255, 0.8);
+} 
+.show {
+    display:block;
+}
+
+                  /*/////////////////////*/
+                 /*wrapper-section-title*/
+                /*/////////////////////*/
+
+.foto-title{
+    width: 20%;
+    height: auto;
+    display: block;
+}
+.block-section-title{
+    display: flex;
+    margin-left: 118px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.name-header{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 61px;
+    letter-spacing: 0.20em;
+    color: #FFFEFE;
+}
+.text-title-name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.21em;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding-top: 15px;
+}
+.text-tile_block-section-title{
+    display: block;
+    padding-left: 74px;
+    padding-top: 110px;    
+}
+.wrapper-haeder{
+    display: flex;
+}
+.contact-hader{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.link-contact-header{
+    margin-right: 15px;
+}
+.line-contact-header{
+    width: 100px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 19px;
+}
+.icon-contact-header{
+    width: 30px;
+    height: auto;
+}
+.phone-icon {
+    width: 25px;
+    height: auto;
+}
+
+          /*///////////////////////////////////////////////*/
+         /*section class="skills-section" id="skill-block"*/
+        /*///////////////////////////////////////////////*/
+
+.skills-section{
+    background: #060606;
+    padding-bottom: 50px;
+}
+.title-skills_skill-section{
+    padding-top: 41px;
+    padding-bottom: 41px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 29px;
+    letter-spacing: 0.17em;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+.wrapper-program{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 40px;
+}
+.title-program{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 21px;
+    letter-spacing: 0.17em;
+    color: #fff;
+    padding-top: 20px;
+}
+.text-program{    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.17em;
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 20px;
+    padding-right: 180px;
+}
+.title-program{
+    padding-right: 180px;
+    padding-left: 10px;
+}
+.wrapper-key-skill{
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.17em;
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 40px;
+}
+.block-skill-line-one{
+    display: flex;
+}
+.block-skill-line-two{
+    display: flex;
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 25%;
+}
+.title-key-skill{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-weight: 800;
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+}
+.wrapper-skill{
+    padding-top: 20px;
+    padding-left: 60px;
+}
+.text-key-skill{
+    padding-left: 40px;
+}
+.wrapper-language, 
+.block-language-one,
+.block-language-two{
+    display: flex;
+}
+.title-language{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 21px;
+    letter-spacing: 0.17em;
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 100px;
+}
+.text-language{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.17em;
+    color: rgba(255, 255, 255, 0.8);
+    padding-right: 80px;
+}
+.wrapper-language{
+    margin-left: 100px;
+    margin-right: 100px;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+.block-language-one{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.block-language-two{
+    padding-top: 25px;
+    padding-left: 80px;
+}
+.text-block-language-two{
+    padding-right: 60px;
+}
+
+          /*////////////////////////////////////////////////*/
+         /*section class="section-abount" id="block-abount"*/
+        /*////////////////////////////////////////////////*/
+
+.section-abount{
+    background-color: #141414;
+    padding-bottom: 50px;
+}
+.title-abount_sction-abount{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 29px;
+    letter-spacing: 0.17em;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+.wrapper-section-abount-one{
+    display: flex;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 40px;
+}
+.title-wrapper-section-abount-one, .title-wrapper-section-abount-two{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 21px;
+    letter-spacing: 0.17em;
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 80px;
+}
+.text_wrapper-section-abount-one{
+    padding-top: 20px;
+}
+.text-promo-text_wrapper-section-abount-one{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.17em;
+    color: rgba(255, 255, 255, 0.8);
+}
+.text-freelans{
+    padding-bottom: 20px;
+}
+
+.wrapper-section-abount-two{
+    display: flex;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.text_wrapper-section-abount-two{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.17em;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 15px;
+}
+.text_wrapper-section-abount-two{
+    padding-top: 20px;
+}
+.text-univesity{
+    padding-bottom: 20px;
+}
+
+          /*///////////////////////////////////////////////////////////////////*/
+         /*section class="game-section portfolio-section" id="block-portfolio"*/
+        /*///////////////////////////////////////////////////////////////////*/
+
+.portfolio-section{
+    background: #060606;
+}
+.clear {
+  clear: both;
+}
+.portfolio-section img {
+  max-width: 100%;
+  border: 0px;
+}
+.portfolio-section a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    color: #fff;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.portfolio-section a:focus,
+.portfolio-section a:active,
+.portfolio-section a:visited,
+.portfolio-section a:hover {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+.portfolio-section a:hover { 
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+.portfolio-section h3 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    line-height: 36px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;  
+    letter-spacing: 0.17em;
+    color: #fff;
+
+}
+
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+
+.title_section-portfolio{
+    padding-top: 41px;
+    padding-bottom: 41px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 29px;
+    letter-spacing: 0.17em;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    text-transform: uppercase;
+}
+.line-title {
+  position: relative;
+  width: 400px;
+}
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+.line-title::after {
+  width: 32px;
+  background: #e73700;
+}
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+
+.game-section {
+  padding: 60px 50px;
+}
+.game-section .owl-stage {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.game-section .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.game-section .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.game-section .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.game-section .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.game-section .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+.game-section .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.game-section .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.game-section .owl-theme.custom-carousel .owl-dots {
+  margin-top: 0px;
+  position: relative;
+  z-index: 5;
+  opacity: 0;
+}
+.owl-prev, .owl-next{
+    color: #fff;
+    background-color: #141414;
+    width: 40px;
+    height: 40px;
+    margin-left: 44%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.owl-next{
+    margin-left: 4%;
+}
+.portfolio-section p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.17em;
+    color: rgba(255, 255, 255, 0.9);
+}
+/*photo*/
+.guest-house{
+    background-image: url(../img/neuro.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+
+        /*//////*/
+       /*footer*/
+      /*//////*/
+
+.footer{
+  background: #141414;
+  padding-bottom: 40px;
+}
+.title-contact{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 29px;
+    letter-spacing: 0.17em;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding-top: 41px;
+    padding-bottom: 41px
+}
+.wrapper-footer{
+    display: flex;
+    margin-left: 15%;
+}
+.text-mail-tel-style{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.17em;
+    color: rgba(255, 255, 255, 0.8);
+    padding-right: 130px;
+}
+.mail-tel-block{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.text-mail_wrapper-footer{
+    background: url(../img/mail-icon-footer.png) no-repeat left center;
+    padding-left: 40px;
+}
+.text-tel_wrapper-footer{
+    background: url(../img/phone-icon-footer.png) no-repeat left center;
+    padding-left: 40px;
+    margin-top: 20px;
+}
+.wrapper-massege_wrapper-footer{
+    margin-left: 130px;
+    margin-top: 20px;
+}
+.telegram-link-footer, .whatsapp-link-footer{
+    padding-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

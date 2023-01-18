@@ -1,0 +1,57 @@
+.abount{
+    text-align: center;
+}
+.text-title-skills_skill-section{
+    font-size: 17px;
+}
+.title-program-ru{
+    font-size: 25px;
+}
+.title-key-skill{
+    padding-right: 0px;
+}
+.wrapper-skill {
+    padding-left: 30px;
+}
+.title-wrapper-section-abount-one {
+
+    line-height: 30px;
+    padding-right: 180px;
+}
+
+@media screen and (min-width: 1616px){
+    .title-wrapper-section-abount-one {
+        padding-right: 10%;
+    }
+}
+@media screen and (min-width: 1616px){
+    .title-wrapper-section-abount-one {
+        padding-right: 12%;
+    }
+}
+@media screen and (min-width: 1280px){
+    .title-wrapper-section-abount-one {
+        padding-right: 15%;
+    }
+}
+@media screen and (max-width: 972px){
+    .wrapper-skill {
+        padding-left: 0px;
+    }
+    .title-wrapper-section-abount-one {
+        padding-right: 0px;
+    }
+    .text-title-name {
+        font-size: 14px;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: -20px;
+        letter-spacing: 0.1em;
+    }
+}
+@media screen and (max-width: 850px){
+    .navbar ul.links li {
+        padding-right: 0px;     
+    }
+}

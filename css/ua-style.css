@@ -1,0 +1,51 @@
+.navbar ul.links li {
+    padding-right: 100px;
+}
+.li-language{
+    margin-left: 20%;
+}
+.text-title-skills_skill-section{
+    font-size: 20px;
+}
+
+
+@media screen and (min-width: 2000px){
+    .li-language{
+        margin-left: 80%;
+    }
+}
+@media screen and (min-width: 1650px){
+    .li-language{
+        margin-left: 50%;
+    }
+}
+@media screen and (min-width: 1650px){
+    .li-language{
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width: 1360px){
+    .li-language{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 1180px){
+    .li-language{
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width: 1115px){
+    .li-language{
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width: 1075px){
+    .navbar ul.links li {
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 870px){
+    .navbar ul.links li {
+        padding-right: 20px;
+    }
+}
